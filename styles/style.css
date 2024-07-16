@@ -1,86 +1,69 @@
+/* Global reset and basic styles */
 html, body {
     height: 100%;
     margin: 0;
+    padding: 0;
+    font-family: 'Playwrite CU', cursive;
+    background-image: url(../images/pattern.gif);
+    background-size: 70%;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.bg-pattern{
-    background-image: url(../images/pattern.gif);
-    background-size: 70%;
-    justify-content: center;
-}
-
-.box-container{
+.box-container {
     background-color: gainsboro;
-    width: 900px;
-    margin: 30px auto;
-    padding: 10px;
+    max-width: 90%; /* Adjust maximum width */
+    margin: 30px;
+    padding: 20px;
     border-radius: 10px;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
-.logo{
-    width: 150px;
-
+.logo {
+    width: 100px; /* Adjust logo size */
 }
 
-.text-center{
-    text-align: center;
-}
-
-.correct-feedback, .incorrect-feedback{
-    padding: 15px;
-    font-size: 30px;
+h1, h4 {
+    color: aqua;
     font-weight: bold;
 }
 
-.correct-feedback{
-    color: green;
-}
-
-.incorrect-feedback{
-    color: red;
+.text-center {
+    text-align: center;
 }
 
 #question {
-    font-size: 25px;
+    font-size: 20px; /* Adjust font size */
 }
 
-#answear { 
-    width: 800px;
+#answear {
+    width: 100%; /* Take full width of the container */
+    max-width: 100%;
     padding: 10px;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
-#btnAnswear {
+#btnAnswear, #regenerate-btn {
     border-radius: 10px;
-    padding: 10px 15px;
+    padding: 10px 20px;
     margin: 15px;
-    border-color:transparent;
+    border-color: transparent;
     background-color: #7686f4;
     color: white;
+    cursor: pointer;
+    display: block; /* Ensure buttons are block elements */
+    width: 100%; /* Take full width of the container */
+    max-width: 100%;
 }
 
-#btnAnswear:hover{
-    cursor: pointer;
+#btnAnswear:hover, #regenerate-btn:hover {
     background-color: white;
-    color:#7686f4;
-}
-
-#regenerate-btn {
-    background-color: bisque;
-    border: 0;
-    border-radius: 10px;
-    width: 200;
-    padding: 10px;
-}
-
-#regenerate-btn:hover{
-    background-color: black;
-    color: bisque;
-    cursor: pointer;
+    color: #7686f4;
 }
 
 #list {
@@ -88,21 +71,20 @@ html, body {
 }
 
 #list li {
-    width: 200px;
     margin: 10px auto;
     padding-bottom: 10px;
     list-style-type: none;
+    text-align: center;
 }
 
 #list li:not(:last-child) {
     border-bottom: 1px solid #7686f4;
 }
 
-h1{
-    color:aqua;
-    font-weight: bold;
+.correct-feedback {
+    color: green;
 }
 
-h1, h4 {
-    font-family: "Playwrite cu", cursive;
+.incorrect-feedback {
+    color: red;
 }
