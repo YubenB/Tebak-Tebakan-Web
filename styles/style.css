@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-pattern{
+    background-image: url(../images/pattern.gif);
+    background-size: 70%;
+    justify-content: center;
+}
+
+.box-container{
+    background-color: gainsboro;
+    width: 900px;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.logo{
+    width: 150px;
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+.correct-feedback, .incorrect-feedback{
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.correct-feedback{
+    color: green;
+}
+
+.incorrect-feedback{
+    color: red;
+}
+
+#question {
+    font-size: 25px;
+}
+
+#answear { 
+    width: 800px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#btnAnswear {
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 15px;
+    border-color:transparent;
+    background-color: #7686f4;
+    color: white;
+}
+
+#btnAnswear:hover{
+    cursor: pointer;
+    background-color: white;
+    color:#7686f4;
+}
+
+#regenerate-btn {
+    background-color: bisque;
+    border: 0;
+    border-radius: 10px;
+    width: 200;
+    padding: 10px;
+}
+
+#regenerate-btn:hover{
+    background-color: black;
+    color: bisque;
+    cursor: pointer;
+}
+
+#list {
+    padding-left: 0;
+}
+
+#list li {
+    width: 200px;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+
+#list li:not(:last-child) {
+    border-bottom: 1px solid #7686f4;
+}
+
+h1{
+    color:aqua;
+    font-weight: bold;
+}
+
+h1, h4 {
+    font-family: "Playwrite cu", cursive;
+}

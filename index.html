@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Tebakan</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body class="bg-pattern">
+    <div class="box-container text-center" id="boxContainer">
+        <img src="images/eskrim.png" class="logo">
+        <h1>Tebak Tebakan</h1>
+        <h4>Dad's Joke</h4>
+        <form onsubmit="handleForm(event)">
+            <p id="question"></p>
+            <input id="answear">
+            <input type="button" value="Check Jawaban" onclick="checkAnswer(event)" id="btnAnswear">
+        </form>
+        <button id="regenerate-btn" onclick="regenerateQuestion(event)">Generate Pertanyaan Lain</button>
+        <div id="feedback"></div>
+        <ul id="list">
+        </ul>
+        <img src="images/yeay.gif" id="yeay" style="display: none">
+    </div>
+
+    <script src="script/index.js"></script>
+</body>
+</html>
