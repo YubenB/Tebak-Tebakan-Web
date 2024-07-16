@@ -20,9 +20,13 @@ const generateQuestion = () => {
       question: "Kenapa roda sepeda tidak pernah sendirian?",
       answer: "Karena selalu berpasangan",
     },
+    {
+      question: "Siapa cewe paling cakep di bekasi",
+      answer: "cika",
+    },
   ];
 
-  const randomNumber = Math.floor(Math.random() * 5);
+  const randomNumber = Math.floor(Math.random() * jokes.length);
 
   return jokes[randomNumber];
 };
